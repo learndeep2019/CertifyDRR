@@ -1,0 +1,56 @@
+{
+    "workers": "0",
+    "task": "multiclass",
+    "data": {
+      "name": "mnist",
+      "train_size": 10000,
+      "test_size": 10000,
+      "cropborder": 0
+    },
+    
+    "algorithm": {
+      "loss": "cs",
+      "margin": [1],
+      "defense_ord": "2",
+      "max_lip": [0],
+      "rkhs_norm": [0],
+      "poly": true,
+      "sampling": {
+        "greedysampling": true,
+        "lbfgs": true,
+        "initialization": 2,
+        "sampling_iter": 10
+      },
+      "iter": 10
+    },
+
+    "model": {
+        "kernel": "gauss",
+        "layers": 1,
+        "bandwidth": 2,
+        "nystrom": {
+          "sampling": "kmean",
+          "landmarks": 1000
+        }
+    },
+
+    "logging": {
+      "islog": false,
+      "filename": "trainlog.txt",
+      "save_model": true
+    },
+
+    "attack": {
+      "dataname": "test",
+      "method": "pgd",
+      "loss": "cw",
+      "margin": 50,
+      "ord": "2",
+      "eps": [1, 6, 6],
+      "rand_init": true,
+      "iters": 20,
+      "clip": true,
+      "islog": false,
+      "save_adv": false
+    }
+  }
