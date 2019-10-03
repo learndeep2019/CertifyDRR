@@ -5,7 +5,7 @@
 
 ## Classification Task
 
-* Model Configuration (config.json)
+* Model Configuration ([config.json](lip_kernel_method/config.json))
 
   `data`: Set the dataset and its size. Currently support "mnist", "fashion-mnist" and "cifar10".
 
