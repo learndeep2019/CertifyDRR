@@ -1,8 +1,8 @@
 disp('Initializing');
 root = pwd;
 
-% Add lbfgs package
+% Add library folder which contains L-BFGS package
 addpath(genpath([root '/lib']));
 
-% Add code folders
+% Add code folder
 addpath(genpath([root '/lip_kernel_method']));

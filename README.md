@@ -5,7 +5,7 @@
 
 ## Classification Task
 
-* Model Configuration ([config.json](lip_kernel_method/config.json))
+* Model Configuration ([config.json](Lipschitz_kernel_method/config.json))
 
   `data`: Set the dataset and its size. Currently support "mnist", "fashion-mnist" and "cifar10".
 
@@ -15,11 +15,11 @@
 
   `attack`: Set the parameters for the attacker. Currently support "pgd", "fgs" and "random" attackers.
 
-  For specific parameter setup, please checkout the [parser_parameter.m](lip_kernel_method/parser_parameter.m)
+  For specific parameter setup, please checkout the [parser_parameter.m](Lipschitz_kernel_method/parser_parameter.m)
 
 * Training
     ```
-    cd lip_kernel_method
+    cd Lipschitz_kernel_method
     run main.m
     ```
     

@@ -1,5 +1,6 @@
 function attack_main(model, pureX, pureY, attack, dataname)
   
+  
   fprintf(attack.fileID, '-----------------------ATTACKING start-----------------------\n');
   fprintf(attack.fileID, 'Data   |  dataname  = %s, size = %5d, attack_ord = %d\n', dataname, numel(pureY), attack.ord);
   fprintf(attack.fileID, 'Attack |  method    = %s,  loss = %s, margin = %4d\n', attack.method, attack.loss, attack.margin);
