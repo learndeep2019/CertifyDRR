@@ -1,4 +1,4 @@
-# Certifying Distributional Robustness using Lipschitz Regularisation
+# Generalised Lipschitz Regularisation Equals Distributional Robustness
 
 ## Environment
 * MATLAB2018
@@ -29,12 +29,12 @@
     ```
     
     
-## Certificate and Bounds 
-* The empirical gap between adversarial risk and lipschitz regularised empirical risk (Figure 2 in the paper):
+## Comparison of Bounds
+* The empirical gap between adversarial risk and lipschitz regularised empirical risk (Figure 3 in the paper):
     ```
     run testbounds/at_certificate.m
     ```
-* Comparison between our new bound and RKHS norm bound (Figure 3 in the paper):
+* Comparison between our new bound and RKHS norm bound (Figure 4 in the paper):
     ```
     run testbounds/gap_simulation_binary.m
     ```
